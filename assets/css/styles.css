@@ -172,6 +172,14 @@ hr {
 
     .nav>li>a {
         padding: 35px;
+        transition-property: font-size;
+        transition-duration: .15s;
+        transition-timing-function: linear;
+    }
+
+    .nav>li>a:hover {
+        font-size: 1.5em;
+        font-color: #000;
     }
 
     .navbar-nav>li>a {
