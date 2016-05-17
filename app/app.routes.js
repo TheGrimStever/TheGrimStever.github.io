@@ -21,9 +21,20 @@ angular.module('partySupply')
         }
       })
 
+      // .state('category', {
+      //   ulr: '/category/:id',
+      //
+      // })
+
       .state('cart', {
         url: '/cart',
-        templateUrl: 'app/components/cart/cartView.html'
+        controller: 'cartCtrl',
+        templateUrl: 'app/components/cart/cartView.html',
+        resolve: {
+          cart: function (cartService) {
+            return cartService.getCart();
+          }
+        }
       })
 
       .state('checkout', {

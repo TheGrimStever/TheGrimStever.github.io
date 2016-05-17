@@ -1,4 +1,7 @@
 angular.module('partySupply')
-  .controller('cartCtrl', function ($scope, productService) {
+  .controller('cartCtrl', function ($scope, cartService, productService, cart) {
+
+    $scope.cart = cart;
+
 
   });

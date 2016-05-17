@@ -4,7 +4,7 @@ angular.module('partySupply')
     $scope.product = productData;
 
     $scope.addToCart = function (id) {
-      $scope.cart = cartService.addToCart(id);
+      cartService.addToCart(id);
     }
 
 
